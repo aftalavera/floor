@@ -1,0 +1,23 @@
+<img src="Untitled" width="1000" height="773" border="0" usemap="#map" />
+
+<map name="map">
+<!-- #$-:Image map file created by GIMP Image Map plug-in -->
+<!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
+<!-- #$-:Please do not edit lines starting with "#$" -->
+<!-- #$VERSION:2.3 -->
+<!-- #$AUTHOR:Angel Talavera -->
+<area shape="rect" coords="421,288,444,311" alt="A1"  nohref="nohref" />
+<area shape="rect" coords="470,287,493,310" alt="A2"  nohref="nohref" />
+<area shape="rect" coords="189,577,212,600" alt="D1"  nohref="nohref" />
+<area shape="rect" coords="218,578,241,601" alt="D2"  nohref="nohref" />
+<area shape="rect" coords="674,577,697,600" alt="D3"  nohref="nohref" />
+<area shape="rect" coords="704,578,727,601" alt="D4"  nohref="nohref" />
+<area shape="rect" coords="430,333,453,356" alt="B1"  nohref="nohref" />
+<area shape="rect" coords="461,332,484,355" alt="B2"  nohref="nohref" />
+<area shape="rect" coords="429,360,452,383" alt="B3"  nohref="nohref" />
+<area shape="rect" coords="461,360,484,383" alt="B4"  nohref="nohref" />
+<area shape="rect" coords="430,416,453,439" alt="C1"  nohref="nohref" />
+<area shape="rect" coords="461,416,484,439" alt="C2"  nohref="nohref" />
+<area shape="rect" coords="431,445,454,468" alt="C3"  nohref="nohref" />
+<area shape="rect" coords="460,445,483,468" alt="C4"  nohref="nohref" />
+</map>

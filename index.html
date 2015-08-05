@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <script src="bower_components/maphilight/jquery.maphilight.min.js"></script>
+    <script src="https://checkout.stripe.com/checkout.js"></script>
+
+    <link rel="stylesheet" href="bower_components/jquery-ui/themes/smoothness/jquery-ui.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <style>
+        .ui-widget{ font-family: 'Roboto', sans-serif; font-size: 1.0em  }
+    </style>
+
+    <script>
+        $(function() {
+            $('.map').maphilight({strokeOpacity: 0, fillOpacity: 0.5});
+        });
+    </script>
+
+</head>
+<body>
+
+
+<div id="dialog-form">
+    <p id="number"></p>
+    <p id="level"></p>
+    <p id="size"></p>
+    <p id="price"></p>
+    <p id="combo"></p>
+</div>
+
+<div id="result-form" title="Transaction result">
+    <p></p>
+</div>
+
+
+<div>
+    <img class="map" width="1000" height="773" src="PHYSIQUE_FLOORPLAN.png" usemap="#susan">
+</div>
+
+<map name="susan">
+<!-- #$-:Image map file created by GIMP Image Map plug-in -->
+<!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
+<!-- #$-:Please do not edit lines starting with "#$" -->
+<!-- #$VERSION:2.3 -->
+<!-- #$AUTHOR:Angel Talavera -->
+
+<!--<area shape="rect" coords="420,288,443,311" alt="A1" nohref="nohref" />-->
+<!--<area shape="rect" coords="469,288,492,311" alt="A2" nohref="nohref"/>-->
+<!--<area shape="rect" coords="537,36,642,100" alt="212" nohref="nohref" />-->
+<!--<area shape="rect" coords="647,36,717,100" alt="211" nohref="nohref" />-->
+<!--<area shape="rect" coords="719,36,782,100" alt="210" nohref="nohref" />-->
+<!--<area shape="rect" coords="882,36,941,113" alt="209" nohref="nohref" />-->
+<!--<area shape="rect" coords="646,132,715,217" alt="213" nohref="nohref" />-->
+<!--<area shape="rect" coords="879,224,929,341" alt="208" nohref="nohref" />-->
+<!--<area shape="rect" coords="492,638,570,741" alt="B204" nohref="nohref" />-->
+<!--<area shape="rect" coords="574,638,652,739" alt="B205" nohref="nohref" />-->
+<!--<area shape="rect" coords="781,637,940,741" alt="B206" nohref="nohref" />-->
+<!--<area shape="rect" coords="879,564,935,630" alt="B207" nohref="nohref" />-->
+<!--<area shape="rect" coords="430,334,453,357" alt="B1" nohref="nohref" />-->
+<!--<area shape="rect" coords="461,334,484,357" alt="B2" nohref="nohref" />-->
+<!--<area shape="rect" coords="430,361,453,384" alt="B3" nohref="nohref" />-->
+<!--<area shape="rect" coords="461,361,484,384" alt="B4" nohref="nohref" />-->
+<!--<area shape="rect" coords="430,418,453,441" alt="C1" nohref="nohref" />-->
+<!--<area shape="rect" coords="461,417,484,440" alt="C2" nohref="nohref" />-->
+<!--<area shape="rect" coords="430,447,453,468" alt="C3" nohref="nohref" />-->
+<!--<area shape="rect" coords="461,446,484,469" alt="C4" nohref="nohref" />-->
+<!--<area shape="rect" coords="189,578,212,601" alt="D1" nohref="nohref" />-->
+<!--<area shape="rect" coords="218,577,241,600" alt="D2" nohref="nohref" />-->
+<!--<area shape="rect" coords="676,578,699,601" alt="D3" nohref="nohref" />-->
+<!--<area shape="rect" coords="704,578,727,601" alt="D4" nohref="nohref" /> -->
+<!--<area shape="rect" coords="269,641,333,735" alt="VIP" nohref="nohref" />-->
+<!--<area shape="rect" coords="337,641,415,735" alt="BEA" nohref="nohref" />-->
+<!--<area shape="rect" coords="418,639,487,734" alt="VOL" nohref="nohref" />-->
+
+	<area shape="rect" coords="181,338,204,361" alt="901" class="A" nohref="nohref" />
+	<area shape="rect" coords="181,365,204,388" alt="902" class="A" nohref="nohref" />
+	<area shape="rect" coords="188,546,211,569" alt="903" class="A" nohref="nohref" />
+	<area shape="rect" coords="218,546,241,569" alt="904" class="A" nohref="nohref" />
+	<area shape="rect" coords="351,547,374,570" alt="905" class="A" nohref="nohref" />
+	<area shape="rect" coords="382,547,405,570" alt="906" class="A" nohref="nohref" />
+	<area shape="rect" coords="507,546,530,569" alt="907" class="A" nohref="nohref" />
+	<area shape="rect" coords="538,546,561,569" alt="908" class="A" nohref="nohref" />
+	<area shape="rect" coords="674,546,697,569" alt="909" class="A" nohref="nohref" />
+	<area shape="rect" coords="703,546,726,569" alt="910" class="A" nohref="nohref" />
+	<area shape="rect" coords="710,338,733,361" alt="911" class="A" nohref="nohref" />
+	<area shape="rect" coords="710,365,733,388" alt="912" class="A" nohref="nohref" />
+
+    <area shape="rect" coords="234,311,257,334" alt="101" class="A" nohref="nohref" />
+    <area shape="rect" coords="234,338,257,361" alt="102" class="B" nohref="nohref" />
+    <area shape="rect" coords="234,365,257,388" alt="103" class="B" nohref="nohref" />
+    <area shape="rect" coords="234,392,257,415" alt="104" class="B" nohref="nohref" />
+    <area shape="rect" coords="234,419,257,442" alt="105" class="B" nohref="nohref" />
+    <area shape="rect" coords="234,446,257,469" alt="106" class="B" nohref="nohref" />
+    <area shape="rect" coords="234,473,257,496" alt="107" class="B" nohref="nohref" />
+    <area shape="rect" coords="234,500,257,523" alt="108" class="A" nohref="nohref" />
+
+    <area shape="rect" coords="268,311,291,334" alt="201" class="A" nohref="nohref" />
+    <area shape="rect" coords="268,339,291,362" alt="202" class="C" nohref="nohref" />
+    <area shape="rect" coords="268,367,291,390" alt="203" class="C" nohref="nohref" />
+    <area shape="rect" coords="268,392,291,415" alt="204" class="C" nohref="nohref" />
+    <area shape="rect" coords="268,419,291,442" alt="205" class="C" nohref="nohref" />
+    <area shape="rect" coords="268,446,291,469" alt="206" class="C" nohref="nohref" />
+    <area shape="rect" coords="268,473,291,496" alt="207" class="C" nohref="nohref" />
+    <area shape="rect" coords="268,500,291,523" alt="208" class="A" nohref="nohref" />
+
+    <area shape="rect" coords="312,311,335,334" alt="301"  class="A" nohref="nohref" />
+    <area shape="rect" coords="312,339,335,362" alt="302"  class="C" nohref="nohref" />
+    <area shape="rect" coords="312,367,335,390" alt="303"  class="C" nohref="nohref" />
+    <area shape="rect" coords="312,392,335,415" alt="304"  class="C" nohref="nohref" />
+    <area shape="rect" coords="312,419,335,442" alt="305"  class="C" nohref="nohref" />
+    <area shape="rect" coords="312,446,335,469" alt="306"  class="C" nohref="nohref" />
+    <area shape="rect" coords="312,473,335,496" alt="307"  class="C" nohref="nohref" />
+    <area shape="rect" coords="312,500,335,523" alt="308"  class="A" nohref="nohref" />
+
+    <area shape="rect" coords="344,311,367,334" alt="401"  class="A" nohref="nohref" />
+    <area shape="rect" coords="344,339,367,362" alt="402"  class="B" nohref="nohref" />
+    <area shape="rect" coords="344,367,367,390" alt="403"  class="B" nohref="nohref" />
+    <area shape="rect" coords="344,392,367,415" alt="404"  class="B" nohref="nohref" />
+    <area shape="rect" coords="344,419,367,442" alt="405"  class="B" nohref="nohref" />
+    <area shape="rect" coords="344,446,367,469" alt="406"  class="B" nohref="nohref" />
+    <area shape="rect" coords="344,473,367,496" alt="407"  class="B" nohref="nohref" />
+    <area shape="rect" coords="344,500,367,523" alt="408"  class="A" nohref="nohref" />
+
+    <area shape="rect" coords="546,311,569,334" alt="501"  class="A" nohref="nohref" />
+    <area shape="rect" coords="546,339,569,362" alt="502"  class="B" nohref="nohref" />
+    <area shape="rect" coords="546,367,569,390" alt="503"  class="B" nohref="nohref" />
+    <area shape="rect" coords="546,392,569,415" alt="504"  class="B" nohref="nohref" />
+    <area shape="rect" coords="546,419,569,442" alt="505"  class="B" nohref="nohref" />
+    <area shape="rect" coords="546,446,569,469" alt="506"  class="B" nohref="nohref" />
+    <area shape="rect" coords="546,473,569,496" alt="507"  class="B" nohref="nohref" />
+    <area shape="rect" coords="546,500,569,523" alt="508"  class="A" nohref="nohref" />
+
+    <area shape="rect" coords="577,311,600,334" alt="601"  class="A" nohref="nohref" />
+    <area shape="rect" coords="577,339,600,362" alt="602"  class="C" nohref="nohref" />
+    <area shape="rect" coords="577,367,600,390" alt="603"  class="C" nohref="nohref" />
+    <area shape="rect" coords="577,392,600,415" alt="604"  class="C" nohref="nohref" />
+    <area shape="rect" coords="577,419,600,442" alt="605"  class="C" nohref="nohref" />
+    <area shape="rect" coords="577,446,600,469" alt="606"  class="C" nohref="nohref" />
+    <area shape="rect" coords="577,473,600,496" alt="607"  class="C" nohref="nohref" />
+    <area shape="rect" coords="577,500,600,523" alt="608"  class="A" nohref="nohref" />
+
+    <area shape="rect" coords="622,311,645,334" alt="701"  class="A" nohref="nohref" />
+    <area shape="rect" coords="622,339,645,362" alt="702"  class="C" nohref="nohref" />
+    <area shape="rect" coords="622,367,645,390" alt="703"  class="C" nohref="nohref" />
+    <area shape="rect" coords="622,392,645,415" alt="704"  class="C" nohref="nohref" />
+    <area shape="rect" coords="622,419,645,442" alt="705"  class="C" nohref="nohref" />
+    <area shape="rect" coords="622,446,645,469" alt="706"  class="C" nohref="nohref" />
+    <area shape="rect" coords="622,473,645,496" alt="707"  class="C" nohref="nohref" />
+    <area shape="rect" coords="622,500,645,523" alt="708"  class="A" nohref="nohref" />
+
+    <area shape="rect" coords="655,311,678,334" alt="801"  class="A" nohref="nohref" />
+    <area shape="rect" coords="655,339,678,362" alt="802"  class="B" nohref="nohref" />
+    <area shape="rect" coords="655,367,678,390" alt="803"  class="B" nohref="nohref" />
+    <area shape="rect" coords="655,392,678,415" alt="804"  class="B" nohref="nohref" />
+    <area shape="rect" coords="655,419,678,442" alt="805"  class="B" nohref="nohref" />
+    <area shape="rect" coords="655,446,678,469" alt="806"  class="B" nohref="nohref" />
+    <area shape="rect" coords="655,473,678,496" alt="807"  class="B" nohref="nohref" />
+    <area shape="rect" coords="655,500,678,523" alt="808"  class="A" nohref="nohref" />
+
+    <area shape="rect" coords="344,576,367,598" alt="S1"   class="S" nohref="nohref" />
+    <area shape="rect" coords="370,576,393,598" alt="S2"   class="S" nohref="nohref" />
+    <area shape="rect" coords="396,576,419,598" alt="S3"   class="S" nohref="nohref" />
+    <area shape="rect" coords="421,576,444,598" alt="S4"   class="S" nohref="nohref" />
+    <area shape="rect" coords="446,576,469,598" alt="S5"   class="S" nohref="nohref" />
+    <area shape="rect" coords="471,576,494,598" alt="S6"   class="S" nohref="nohref" />
+    <area shape="rect" coords="496,576,519,598" alt="S7"   class="S" nohref="nohref" />
+    <area shape="rect" coords="521,576,544,598" alt="S8"   class="S" nohref="nohref" />
+    <area shape="rect" coords="546,576,569,598" alt="S9"   class="S" nohref="nohref" />
+
+    <area shape="rect" coords="421,288,444,311" alt="A1"  class="SPONSOR" nohref="nohref" />
+    <area shape="rect" coords="470,287,493,310" alt="A2"  class="SPONSOR" nohref="nohref" />
+    <area shape="rect" coords="189,577,212,600" alt="D1"  class="SPONSOR" nohref="nohref" />
+    <area shape="rect" coords="218,578,241,601" alt="D2"  class="SPONSOR" nohref="nohref" />
+    <area shape="rect" coords="675,577,698,600" alt="D3"  class="SPONSOR" nohref="nohref" />
+    <area shape="rect" coords="704,578,727,601" alt="D4"  class="SPONSOR" nohref="nohref" />
+    <area shape="rect" coords="430,333,453,356" alt="B1"  class="SPONSOR" nohref="nohref" />
+    <area shape="rect" coords="461,332,484,355" alt="B2"  class="SPONSOR" nohref="nohref" />
+    <area shape="rect" coords="430,360,453,383" alt="B3"  class="SPONSOR" nohref="nohref" />
+    <area shape="rect" coords="461,360,484,383" alt="B4"  class="SPONSOR" nohref="nohref" />
+    <area shape="rect" coords="430,416,453,439" alt="C1"  class="SPONSOR" nohref="nohref" />
+    <area shape="rect" coords="461,416,484,439" alt="C2"  class="SPONSOR" nohref="nohref" />
+    <area shape="rect" coords="431,445,454,468" alt="C3"  class="SPONSOR" nohref="nohref" />
+    <area shape="rect" coords="460,445,483,468" alt="C4"  class="SPONSOR" nohref="nohref" />
+
+</map>
+
+
+<script src="app.js"></script>
+</body>
+</html>

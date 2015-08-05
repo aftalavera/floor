@@ -1,0 +1,15 @@
+<img src="map.xcf" width="1000" height="773" border="0" usemap="#map" />
+
+<map name="map">
+<!-- #$-:Image map file created by GIMP Image Map plug-in -->
+<!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
+<!-- #$-:Please do not edit lines starting with "#$" -->
+<!-- #$VERSION:2.3 -->
+<!-- #$AUTHOR:Angel Talavera  -->
+<area shape="rect" coords="311,311,334,334" alt="301"  nohref="nohref" />
+<area shape="rect" coords="344,311,367,334" alt="401"  nohref="nohref" />
+<area shape="rect" coords="546,311,569,334" alt="501"  nohref="nohref" />
+<area shape="rect" coords="577,311,600,334" alt="601"  nohref="nohref" />
+<area shape="rect" coords="622,311,645,334" alt="701"  nohref="nohref" />
+<area shape="rect" coords="655,311,678,334" alt="801"  nohref="nohref" />
+</map>
